@@ -30,5 +30,13 @@
       id="gameIframe"
       sandbox="allow-scripts allow-same-origin allow-pointer-lock allow-forms"
     ></iframe>
+
+    <script>
+      const url = prompt("Enter a URL to load:");
+
+      if (url) {
+        document.getElementById("gameIframe").src = url;
+      }
+    </script>
   </body>
 </html>
